@@ -1,0 +1,38 @@
+.question-item {
+  padding: 1rem;
+  background: var(--secondary-black);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.question-item a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.question-item a:hover {
+  color: var(--primary-orange);
+}
+
+.question-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.author-info {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+}
+
+.author-name {
+  margin-right: 0.75rem;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.me-1 {
+  margin-right: 0.25rem;
+}

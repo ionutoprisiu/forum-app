@@ -1,0 +1,185 @@
+/* Add an answer – scoped so parent styles don't override */
+.answer-form-section {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  background: #252525;
+  border: 1px solid #4a4a4a;
+  border-radius: 12px;
+  color: #f0f0f0;
+}
+
+.answer-form-section .answer-form-header {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.answer-form-section .answer-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.75rem 1rem;
+  background: #1a1a1a;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.answer-form-section .answer-input::placeholder {
+  color: #9ca3af;
+}
+
+.answer-form-section .answer-input:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+  background: #1a1a1a;
+}
+
+.answer-form-section .image-upload-section {
+  border: 2px dashed #4a4a4a;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: #1e1e1e;
+}
+
+.answer-form-section .image-upload-section.drag-active {
+  border-color: var(--primary-orange);
+  background: rgba(var(--primary-orange-rgb), 0.08);
+}
+
+.answer-form-section .image-upload-content .upload-icon {
+  font-size: 1.5rem;
+  color: var(--primary-orange);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.answer-form-section .image-upload-content p {
+  color: #d4d8dc;
+  margin: 0.25rem 0;
+}
+
+.file-input { display: none; }
+
+.answer-form-section .upload-button {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background: #2d2d2d;
+  border: 1px solid #5a5a5a;
+  border-radius: 6px;
+  color: #f0f0f0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.answer-form-section .upload-button:hover {
+  background: #3a3a3a;
+  border-color: #6a6a6a;
+}
+
+/* Muted text – clearly visible, not overridden by parent */
+.answer-form-section .text-muted {
+  color: #d4d8dc !important;
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+}
+
+.image-preview-container {
+  margin-top: 0.75rem;
+  position: relative;
+  display: inline-block;
+}
+
+.image-preview {
+  max-width: 100%;
+  max-height: 150px;
+  border-radius: 8px;
+}
+
+.remove-image {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.answer-form-section .error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ff6666;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.success-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  color: #66bb6a;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.answer-form-section .answer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.answer-form-section .answer-actions .text-muted {
+  color: #d4d8dc !important;
+}
+
+.answer-form-section .answer-actions .btn-primary {
+  padding: 0.6rem 1.25rem;
+  background: var(--primary-orange);
+  color: var(--text-light);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.answer-form-section .answer-actions .btn-primary:hover:not(:disabled) {
+  background: var(--light-orange);
+}
+
+.answer-form-section .answer-actions .btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spin { animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }

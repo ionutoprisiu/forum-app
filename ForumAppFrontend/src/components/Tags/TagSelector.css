@@ -1,0 +1,125 @@
+.tag-selector-container {
+  margin-bottom: 1.5rem;
+}
+
+.tag-heading {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+}
+
+.tag-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tag-input {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.5rem 0.75rem;
+  background: var(--primary-black);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.tag-input:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+}
+
+.add-tag-button {
+  padding: 0.5rem 1rem;
+  background: var(--primary-orange);
+  color: var(--text-light);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-tag-button:hover {
+  background: var(--light-orange);
+}
+
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.selected-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  background: rgba(var(--primary-orange-rgb), 0.2);
+  color: var(--primary-orange);
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.remove-tag {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+.remove-tag:hover {
+  opacity: 0.8;
+}
+
+.popular-tags {
+  margin-top: 1rem;
+}
+
+.popular-tags-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-item {
+  padding: 0.4rem 0.75rem;
+  background: var(--primary-black);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-item:hover {
+  border-color: var(--primary-orange);
+  color: var(--text-light);
+}
+
+.tag-item.selected {
+  background: var(--primary-orange);
+  color: var(--text-light);
+  border-color: var(--primary-orange);
+}
+
+.tag-selector-container .error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #ff6666;
+}
